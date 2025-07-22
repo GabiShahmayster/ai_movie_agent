@@ -82,6 +82,8 @@ if __name__ == "__main__":
 
     # Compile the graph
     graph = builder.compile()
+    with open("graph.png", "wb") as f:
+        f.write(graph.get_graph().draw_mermaid_png())
 
     from langchain_core.messages import HumanMessage, SystemMessage
 
