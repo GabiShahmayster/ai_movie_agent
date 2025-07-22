@@ -1,0 +1,8 @@
+{
+    "dependencies": ["."],
+    "graphs": {
+        "agent": "./src/agents/movie_agent.py:graph",
+        "legacy_agent": "./main.py:graph"
+    },
+    "env": ".env"
+}
